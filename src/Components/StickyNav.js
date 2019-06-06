@@ -15,17 +15,36 @@ const NavList = styled.nav`
 	justify-content: center;
 `;
 
+const NavLogo = styled.div`
+	display: none;
+	font-family: "megrim", sans-serif;
+	color: white;
+	font-size: 2rem;
+	&:hover {
+		color: white;
+	}
+`;
+
 const NavItem = styled.li`
 	padding: 1rem 3rem;
 	font-size: 1.4rem;
 	font-weight: 200;
 	color: rgb(200, 200, 200);
+	&:hover {
+		color: white;
+	}
 `;
 
 const StickyNav = props => {
 	return (
 		<Wrapper>
 			<NavList>
+				<NavLogo onClick={() => props.scrollToElement("header")}>
+					<p style={{ display: "inline", fontWeight: "bold" }}>
+						Buzz
+					</p>
+					<p style={{ display: "inline", fontWeight: 200 }}>Co</p>
+				</NavLogo>
 				<NavItem onClick={() => props.scrollToElement("our-story")}>
 					Our Story
 				</NavItem>

@@ -83,7 +83,7 @@ class FullscreenHeader extends Component {
 					muted
 					loop
 				/>
-				<LogoBold>Buzz</LogoBold>
+				<LogoBold id="header">Buzz</LogoBold>
 				<LogoThin>Co</LogoThin>
 				<TradeMark>tm</TradeMark>
 				<Subtitle>Engineering solutions</Subtitle>
