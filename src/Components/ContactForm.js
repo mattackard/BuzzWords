@@ -8,6 +8,8 @@ const Wrapper = styled.div`
 const Title = styled.h1`
 	font-size: 4rem;
 	text-align: center;
+	margin: 0;
+	padding: 2rem 0;
 `;
 
 const SubjectField = styled.input`
@@ -35,6 +37,7 @@ const SubmitButton = styled.button`
 	font-size: 1.4rem;
 	text-align: center;
 	padding: 1rem 3rem;
+	margin: 0 0 4rem 45vw;
 	border-radius: 1em;
 	background-color: white;
 `;
@@ -51,11 +54,13 @@ class ContactForm extends Component {
 				<Title>Contact Us</Title>
 				<form>
 					<SubjectField type="text" placeholder="Subject" />
-					<MessageField placeholder="Type your message here" />
+					<MessageField
+						id="contact-us"
+						placeholder="Type your message here"
+					/>
 					<SubmitButton
 						type="submit"
-						onSubmit={e => this.submitContact(e)}
-					>
+						onClick={e => this.submitContact(e)}>
 						Send
 					</SubmitButton>
 				</form>

@@ -4,7 +4,6 @@ import TypeIt from "typeit";
 
 const Wrapper = styled.div`
 	height: 100vh;
-	overflow: hidden;
 	margin: 0;
 	padding: 0;
 	background-color: rgba(0, 0, 0, 0.6);
@@ -13,8 +12,10 @@ const Wrapper = styled.div`
 const BackgroundVideo = styled.video`
 	position: absolute;
 	top: 0;
-	width: 100vw;
+	width: 100%;
+	height: 100%;
 	z-index: -1;
+	object-fit: cover;
 `;
 
 const LogoBold = styled.h1`
@@ -22,7 +23,7 @@ const LogoBold = styled.h1`
 	font-family: "megrim", sans serif;
 	font-size: 12rem;
 	color: white;
-	margin: 10% 0 0 10%;
+	margin: 10% 0 0 15%;
 `;
 
 const LogoThin = styled.h1`
@@ -42,13 +43,13 @@ const TradeMark = styled.p`
 const Subtitle = styled.h1`
 	color: white;
 	font-size: 3rem;
-	margin: 0 0 0 50%;
+	margin: 0 0 0 55%;
 `;
 
 const Typed = styled.p`
 	color: white;
 	font-size: 2rem;
-	margin: 0 0 0 50%;
+	margin: 0 0 0 55%;
 `;
 
 class FullscreenHeader extends Component {

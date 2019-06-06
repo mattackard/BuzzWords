@@ -26,11 +26,21 @@ const StickyNav = props => {
 	return (
 		<Wrapper>
 			<NavList>
-				<NavItem>Our Story</NavItem>
-				<NavItem>What we do</NavItem>
-				<NavItem>Why Buzz</NavItem>
-				<NavItem>Our Team</NavItem>
-				<NavItem>Contact Us</NavItem>
+				<NavItem onClick={() => props.scrollToElement("our-story")}>
+					Our Story
+				</NavItem>
+				<NavItem onClick={() => props.scrollToElement("what-we-do")}>
+					What We Do
+				</NavItem>
+				<NavItem onClick={() => props.scrollToElement("why-buzz")}>
+					Why Buzz
+				</NavItem>
+				<NavItem onClick={() => props.scrollToElement("our-team")}>
+					Our Team
+				</NavItem>
+				<NavItem onClick={() => props.scrollToElement("contact-us")}>
+					Contact Us
+				</NavItem>
 			</NavList>
 		</Wrapper>
 	);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 
 //component imports
@@ -8,21 +8,31 @@ import MainContent from "./Components/MainContent";
 import Footer from "./Components/Footer";
 
 const AppContainer = styled.div`
-	width: 100vw;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 `;
 
-const App = () => {
-	return (
-		<AppContainer>
-			<StickyNav />
-			<FullscreenHeader />
-			<MainContent />
-			<Footer />
-		</AppContainer>
-	);
-};
+class App extends Component {
+	//smooth scrolls to a given element
+	scrollToElement = elementID => {
+		console.log(elementID);
+		let element = document.getElementById(elementID);
+		if (element !== null)
+			element.scrollIntoView({ behavior: "smooth", block: "center" });
+	};
+
+	render() {
+		return (
+			<AppContainer>
+				<StickyNav scrollToElement={this.scrollToElement} />
+				<FullscreenHeader />
+				<MainContent />
+				<Footer />
+			</AppContainer>
+		);
+	}
+}
 
 export default App;

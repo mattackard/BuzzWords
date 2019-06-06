@@ -4,27 +4,40 @@ import styled from "styled-components";
 import ContactForm from "./ContactForm";
 
 const Wrapper = styled.div`
-	width: 100vw;
+	width: 100%;
 	margin: auto;
 `;
 
 const Section = styled.div`
-	min-height: 100vh;
 	border: 2px solid black;
 `;
 
 const Content = styled.div`
-	width: 80%;
+	width: 60%;
 	margin: 4rem auto;
 `;
 
 const SubHeading = styled.h2`
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: bold;
 `;
 
 const SectionText = styled.p`
-	font-size: 2rem;
+	font-size: 1.5rem;
+`;
+
+const TeamImageContainer = styled.ul`
+	list-style: none;
+`;
+
+const TeamImage = styled.img`
+	width: 20rem;
+	height: 20rem;
+	border-radius: 50%;
+	object-fit: cover;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 `;
 
 const MainContent = props => {
@@ -33,7 +46,7 @@ const MainContent = props => {
 			<Section>
 				<Content>
 					<SubHeading>Our Story</SubHeading>
-					<SectionText>
+					<SectionText id="our-story">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						In in fringilla tellus, non cursus lectus. Cras
 						pellentesque, arcu ut ullamcorper aliquet, odio enim
@@ -65,8 +78,8 @@ const MainContent = props => {
 			</Section>
 			<Section>
 				<Content>
-					<SubHeading>What we do</SubHeading>
-					<SectionText>
+					<SubHeading>What We Do</SubHeading>
+					<SectionText id="what-we-do">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						In in fringilla tellus, non cursus lectus. Cras
 						pellentesque, arcu ut ullamcorper aliquet, odio enim
@@ -99,7 +112,7 @@ const MainContent = props => {
 			<Section>
 				<Content>
 					<SubHeading>Why Buzz</SubHeading>
-					<SectionText>
+					<SectionText id="why-buzz">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						In in fringilla tellus, non cursus lectus. Cras
 						pellentesque, arcu ut ullamcorper aliquet, odio enim
@@ -132,7 +145,39 @@ const MainContent = props => {
 			<Section>
 				<Content>
 					<SubHeading>Our Team</SubHeading>
-					<SectionText>
+					<TeamImageContainer>
+						<li>
+							<TeamImage
+								src=".\media\team1.jpg"
+								alt="team member 1"
+							/>
+						</li>
+						<li>
+							<TeamImage
+								src=".\media\team2.jpg"
+								alt="team member 2"
+							/>
+						</li>
+						<li>
+							<TeamImage
+								src=".\media\team3.jpg"
+								alt="team member 3"
+							/>
+						</li>
+						<li>
+							<TeamImage
+								src=".\media\team4.jpg"
+								alt="team member 4"
+							/>
+						</li>
+						<li>
+							<TeamImage
+								src=".\media\team5.jpg"
+								alt="team member 5"
+							/>
+						</li>
+					</TeamImageContainer>
+					<SectionText id="our-team">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						In in fringilla tellus, non cursus lectus. Cras
 						pellentesque, arcu ut ullamcorper aliquet, odio enim
