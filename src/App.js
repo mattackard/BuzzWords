@@ -15,6 +15,10 @@ const AppContainer = styled.div`
 `;
 
 class App extends Component {
+	state = {
+		headerInNav: false,
+	};
+
 	//smooth scrolls to a given element
 	scrollToElement = elementID => {
 		console.log(elementID);
@@ -26,7 +30,10 @@ class App extends Component {
 	render() {
 		return (
 			<AppContainer>
-				<StickyNav scrollToElement={this.scrollToElement} />
+				<StickyNav
+					scrollToElement={this.scrollToElement}
+					headerInNav={this.state.headerInNav}
+				/>
 				<FullscreenHeader />
 				<MainContent />
 				<Footer />

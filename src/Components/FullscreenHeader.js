@@ -74,6 +74,12 @@ class FullscreenHeader extends Component {
 			.pause(700)
 			.go();
 	}
+
+	isInView = () => {
+		console.log(this);
+		console.log(this.getBoundingClientRect().top);
+	};
+
 	render() {
 		return (
 			<Wrapper>
@@ -83,7 +89,9 @@ class FullscreenHeader extends Component {
 					muted
 					loop
 				/>
-				<LogoBold id="header">Buzz</LogoBold>
+				<LogoBold id="header" onscroll={() => this.isInView}>
+					Buzz
+				</LogoBold>
 				<LogoThin>Co</LogoThin>
 				<TradeMark>tm</TradeMark>
 				<Subtitle>Engineering solutions</Subtitle>

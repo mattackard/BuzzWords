@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-	background-color: lightblue;
+	background-color: rgb(50, 50, 60);
 `;
 
 const Title = styled.h1`
@@ -10,6 +10,7 @@ const Title = styled.h1`
 	text-align: center;
 	margin: 0;
 	padding: 2rem 0;
+	color: white;
 `;
 
 const SubjectField = styled.input`

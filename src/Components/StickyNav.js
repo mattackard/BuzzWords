@@ -16,7 +16,6 @@ const NavList = styled.nav`
 `;
 
 const NavLogo = styled.div`
-	display: none;
 	font-family: "megrim", sans-serif;
 	color: white;
 	font-size: 2rem;
@@ -40,10 +39,20 @@ const StickyNav = props => {
 		<Wrapper>
 			<NavList>
 				<NavLogo onClick={() => props.scrollToElement("header")}>
-					<p style={{ display: "inline", fontWeight: "bold" }}>
+					<p
+						style={{
+							display: props.headerInNav ? "inline" : "none",
+							fontWeight: "bold",
+						}}>
 						Buzz
 					</p>
-					<p style={{ display: "inline", fontWeight: 200 }}>Co</p>
+					<p
+						style={{
+							display: props.headerInNav ? "inline" : "none",
+							fontWeight: 200,
+						}}>
+						Co
+					</p>
 				</NavLogo>
 				<NavItem onClick={() => props.scrollToElement("our-story")}>
 					Our Story
