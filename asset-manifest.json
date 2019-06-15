@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/BuzzWords/static/css/main.a3bbb88a.chunk.css",
-    "main.js": "/BuzzWords/static/js/main.e88561d4.chunk.js",
-    "main.js.map": "/BuzzWords/static/js/main.e88561d4.chunk.js.map",
+    "main.css": "/BuzzWords/static/css/main.6df1a944.chunk.css",
+    "main.js": "/BuzzWords/static/js/main.13732bd1.chunk.js",
+    "main.js.map": "/BuzzWords/static/js/main.13732bd1.chunk.js.map",
     "runtime~main.js": "/BuzzWords/static/js/runtime~main.b2c7676b.js",
     "runtime~main.js.map": "/BuzzWords/static/js/runtime~main.b2c7676b.js.map",
-    "static/js/2.69336eec.chunk.js": "/BuzzWords/static/js/2.69336eec.chunk.js",
-    "static/js/2.69336eec.chunk.js.map": "/BuzzWords/static/js/2.69336eec.chunk.js.map",
+    "static/js/2.8a607bd9.chunk.js": "/BuzzWords/static/js/2.8a607bd9.chunk.js",
+    "static/js/2.8a607bd9.chunk.js.map": "/BuzzWords/static/js/2.8a607bd9.chunk.js.map",
     "index.html": "/BuzzWords/index.html",
-    "precache-manifest.2746c4d4856bf456f3c20fb1da58a3ea.js": "/BuzzWords/precache-manifest.2746c4d4856bf456f3c20fb1da58a3ea.js",
+    "precache-manifest.4e79f55378d0aa58712e66e34203a21b.js": "/BuzzWords/precache-manifest.4e79f55378d0aa58712e66e34203a21b.js",
     "service-worker.js": "/BuzzWords/service-worker.js",
-    "static/css/main.a3bbb88a.chunk.css.map": "/BuzzWords/static/css/main.a3bbb88a.chunk.css.map"
+    "static/css/main.6df1a944.chunk.css.map": "/BuzzWords/static/css/main.6df1a944.chunk.css.map"
   }
 }
