@@ -36,7 +36,7 @@ class App extends Component {
 				/>
 				<FullscreenHeader />
 				<MainContent />
-				<Footer />
+				{/* <Footer /> */}
 			</AppContainer>
 		);
 	}

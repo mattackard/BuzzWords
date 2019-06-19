@@ -13,6 +13,11 @@ const Title = styled.h1`
 	color: white;
 `;
 
+const SubText = styled.aside`
+	color: white;
+	text-align: center;
+`;
+
 const SubjectField = styled.input`
 	display: block;
 	width: 60%;
@@ -30,7 +35,7 @@ const MessageField = styled.textarea`
 	width: 60%;
 	margin: 2rem auto;
 	font-size: 1.2rem;
-	min-height: 40vh;
+	min-height: 20vh;
 	overflow: auto;
 `;
 
@@ -53,7 +58,11 @@ class ContactForm extends Component {
 		return (
 			<Wrapper>
 				<Title>Contact Us</Title>
-				<form>
+				<SubText>We'd love to hear from you!</SubText>
+				<form
+					action="mailto:mattackard@gmail.com"
+					method="post"
+					enctype="text/plain">
 					<SubjectField type="text" placeholder="Subject" />
 					<MessageField
 						id="contact-us"

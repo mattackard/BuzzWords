@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import ContactForm from "./ContactForm";
 
-const backgroundColor = "rgb(50,50,60)";
+const backgroundColor = "rgb(240,240,240)";
 
 const Wrapper = styled.div`
 	width: 100%;
@@ -11,29 +11,33 @@ const Wrapper = styled.div`
 `;
 
 const Section = styled.div`
-	border-top: 20em solid ${backgroundColor};
+	border-top: 2em solid ${backgroundColor};
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: white;
+	color: black;
+	padding: 4rem 0;
 `;
 
 const Content = styled.div`
 	width: 60%;
 	margin: 0 auto;
-	padding-bottom: 4rem;
 	opacity: 1;
+	padding: 4rem;
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 6px solid ${backgroundColor};
 `;
 
 const SubHeading = styled.h2`
 	font-size: 3rem;
 	font-weight: bold;
+	margin: 0 0 4rem;
 `;
 
 const SectionText = styled.p`
 	font-size: 1.5rem;
-	margin: 0;
+	line-height: 1.3;
 `;
 
 const TeamImageContainer = styled.ul`
@@ -41,6 +45,8 @@ const TeamImageContainer = styled.ul`
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin: 0 0 5em -5em;
+	padding: 0;
 `;
 
 const TeamImage = styled.img`
@@ -62,36 +68,36 @@ const MainContent = props => {
 	return (
 		<Wrapper>
 			<Section
-				style={{ backgroundImage: 'url("media/serverSwitch.png")' }}>
+				style={{
+					backgroundImage: 'url("media/serverSwitch.png")',
+				}}>
 				<Content>
 					<SubHeading>Our Story</SubHeading>
 					<SectionText id="our-story">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						In in fringilla tellus, non cursus lectus. Cras
-						pellentesque, arcu ut ullamcorper aliquet, odio enim
-						placerat lorem, nec vehicula turpis magna ac odio.
-						Pellentesque hendrerit pellentesque mauris, ac
-						scelerisque metus faucibus id. Duis congue vestibulum
-						felis eget aliquam. Morbi libero diam, vestibulum vel
-						scelerisque a, sagittis sit amet purus. Aliquam mi
-						dolor, pharetra vitae elit ut, auctor fermentum urna.
-						Suspendisse potenti. Fusce vulputate posuere varius.
-						Aenean interdum quam in lorem vehicula auctor. Proin vel
-						ex nec sem sollicitudin porta eu at urna. Vestibulum ac
-						nisi in nisi posuere feugiat in sit amet nisi.
-						Suspendisse ut laoreet est. Donec laoreet est sed
-						maximus convallis. In a dictum metus, ut mattis nulla.
-						Sed nulla nulla, faucibus vel augue vitae, laoreet
-						bibendum leo. Donec ac tempus eros. Vestibulum ante
-						ipsum primis in faucibus orci luctus et ultrices posuere
-						cubilia Curae; Cras sed volutpat ligula. Duis vitae leo
-						sed velit venenatis iaculis. Donec mattis mattis quam eu
-						efficitur. Praesent ex augue, fringilla vitae
-						consectetur vel, dictum non leo. Nam nulla metus,
-						finibus non libero in, tempus suscipit odio. Sed non
-						erat a leo ultrices consectetur. Nam non purus id libero
-						porta congue. Curabitur orci ante, aliquet in lacus ac,
-						pharetra ultricies nisi.
+						Buzz Co was born out of a 1 car garage in Palo Alto,
+						California. We envision a cloud connected future
+						enabling 10x efficiency on prem to quantify AI IoT SaaS
+						infastructure throughout 5G smart cities. We're building
+						new internet infrastructure to democratize access to
+						data and algorithms in the age of artificial
+						intelligence and machine learning. We're building the
+						most advanced web-based environment for creating,
+						sharing, deploying, digitizing, and discussing ad-hoc
+						analysis using a variety of modern technologies. We
+						believe that the way business gets done today is broken.
+						That’s why we’re dedicated to simplifying work for
+						everyone - from small startups to large enterprise
+						companies. Buzz is a data-driven resolution platform,
+						solving dire problems for both sides of the
+						relationship. We sell software to the most innovative
+						companies in the world. Our customers have reported more
+						than $5B worth of net impact to their organizations.
+						We’re the #1 player in the market and have plans to grow
+						dramatically over the next few years. Each of our
+						products can function as a powerful stand-alone tool or
+						utilized as part of a tightly-integrated system. Our
+						suite provides the most mature solution available to
+						support the entire end-to-end innovation process.
 					</SectionText>
 				</Content>
 			</Section>
@@ -102,32 +108,17 @@ const MainContent = props => {
 				<Content>
 					<SubHeading>What We Do</SubHeading>
 					<SectionText id="what-we-do">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						In in fringilla tellus, non cursus lectus. Cras
-						pellentesque, arcu ut ullamcorper aliquet, odio enim
-						placerat lorem, nec vehicula turpis magna ac odio.
-						Pellentesque hendrerit pellentesque mauris, ac
-						scelerisque metus faucibus id. Duis congue vestibulum
-						felis eget aliquam. Morbi libero diam, vestibulum vel
-						scelerisque a, sagittis sit amet purus. Aliquam mi
-						dolor, pharetra vitae elit ut, auctor fermentum urna.
-						Suspendisse potenti. Fusce vulputate posuere varius.
-						Aenean interdum quam in lorem vehicula auctor. Proin vel
-						ex nec sem sollicitudin porta eu at urna. Vestibulum ac
-						nisi in nisi posuere feugiat in sit amet nisi.
-						Suspendisse ut laoreet est. Donec laoreet est sed
-						maximus convallis. In a dictum metus, ut mattis nulla.
-						Sed nulla nulla, faucibus vel augue vitae, laoreet
-						bibendum leo. Donec ac tempus eros. Vestibulum ante
-						ipsum primis in faucibus orci luctus et ultrices posuere
-						cubilia Curae; Cras sed volutpat ligula. Duis vitae leo
-						sed velit venenatis iaculis. Donec mattis mattis quam eu
-						efficitur. Praesent ex augue, fringilla vitae
-						consectetur vel, dictum non leo. Nam nulla metus,
-						finibus non libero in, tempus suscipit odio. Sed non
-						erat a leo ultrices consectetur. Nam non purus id libero
-						porta congue. Curabitur orci ante, aliquet in lacus ac,
-						pharetra ultricies nisi.
+						Buzz Co specializes in leveraging emerging technologies
+						like analytics, security, cloud, mobile, and machine
+						learning. It uses this technology to create “sticky” new
+						customer experiences, to achieve surprising cost
+						efficiencies, and to quickly deliver innovative
+						solutions as one of the fastest growing digital
+						transformation leaders in the industry! By creating a
+						master data set, we can automate key work streams
+						(reporting, budgeting, modeling, etc), and create an
+						amazing user experience that provides tremendous value
+						for the org.
 					</SectionText>
 				</Content>
 			</Section>
@@ -138,40 +129,20 @@ const MainContent = props => {
 				<Content>
 					<SubHeading>Why Buzz</SubHeading>
 					<SectionText id="why-buzz">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						In in fringilla tellus, non cursus lectus. Cras
-						pellentesque, arcu ut ullamcorper aliquet, odio enim
-						placerat lorem, nec vehicula turpis magna ac odio.
-						Pellentesque hendrerit pellentesque mauris, ac
-						scelerisque metus faucibus id. Duis congue vestibulum
-						felis eget aliquam. Morbi libero diam, vestibulum vel
-						scelerisque a, sagittis sit amet purus. Aliquam mi
-						dolor, pharetra vitae elit ut, auctor fermentum urna.
-						Suspendisse potenti. Fusce vulputate posuere varius.
-						Aenean interdum quam in lorem vehicula auctor. Proin vel
-						ex nec sem sollicitudin porta eu at urna. Vestibulum ac
-						nisi in nisi posuere feugiat in sit amet nisi.
-						Suspendisse ut laoreet est. Donec laoreet est sed
-						maximus convallis. In a dictum metus, ut mattis nulla.
-						Sed nulla nulla, faucibus vel augue vitae, laoreet
-						bibendum leo. Donec ac tempus eros. Vestibulum ante
-						ipsum primis in faucibus orci luctus et ultrices posuere
-						cubilia Curae; Cras sed volutpat ligula. Duis vitae leo
-						sed velit venenatis iaculis. Donec mattis mattis quam eu
-						efficitur. Praesent ex augue, fringilla vitae
-						consectetur vel, dictum non leo. Nam nulla metus,
-						finibus non libero in, tempus suscipit odio. Sed non
-						erat a leo ultrices consectetur. Nam non purus id libero
-						porta congue. Curabitur orci ante, aliquet in lacus ac,
-						pharetra ultricies nisi.
+						With offices in San Francisco, London, and Bangalore,
+						together we've served over 400 million consumers
+						worldwide across 7 billion interactions, 38 countries,
+						and 55 languages. The Buzz Co platform integrates with
+						leading Marketing and sales applications to further
+						streamline best-in-class go-to-market execution for
+						companies of all sizes. We are a well-financed,
+						fast-growing startup backed by top investors, located in
+						downtown Palo Alto just minutes from Caltrain.
 					</SectionText>
 				</Content>
 			</Section>
-			<Section
-				style={{
-					backgroundImage: 'url("media/officeMeeting.png")',
-				}}>
-				<Content>
+			<Section>
+				<Content style={{ boxShadow: "0px 5px 10px gray" }}>
 					<SubHeading>Our Team</SubHeading>
 					<TeamImageContainer>
 						<li>
@@ -208,32 +179,19 @@ const MainContent = props => {
 						</li>
 					</TeamImageContainer>
 					<SectionText id="our-team">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						In in fringilla tellus, non cursus lectus. Cras
-						pellentesque, arcu ut ullamcorper aliquet, odio enim
-						placerat lorem, nec vehicula turpis magna ac odio.
-						Pellentesque hendrerit pellentesque mauris, ac
-						scelerisque metus faucibus id. Duis congue vestibulum
-						felis eget aliquam. Morbi libero diam, vestibulum vel
-						scelerisque a, sagittis sit amet purus. Aliquam mi
-						dolor, pharetra vitae elit ut, auctor fermentum urna.
-						Suspendisse potenti. Fusce vulputate posuere varius.
-						Aenean interdum quam in lorem vehicula auctor. Proin vel
-						ex nec sem sollicitudin porta eu at urna. Vestibulum ac
-						nisi in nisi posuere feugiat in sit amet nisi.
-						Suspendisse ut laoreet est. Donec laoreet est sed
-						maximus convallis. In a dictum metus, ut mattis nulla.
-						Sed nulla nulla, faucibus vel augue vitae, laoreet
-						bibendum leo. Donec ac tempus eros. Vestibulum ante
-						ipsum primis in faucibus orci luctus et ultrices posuere
-						cubilia Curae; Cras sed volutpat ligula. Duis vitae leo
-						sed velit venenatis iaculis. Donec mattis mattis quam eu
-						efficitur. Praesent ex augue, fringilla vitae
-						consectetur vel, dictum non leo. Nam nulla metus,
-						finibus non libero in, tempus suscipit odio. Sed non
-						erat a leo ultrices consectetur. Nam non purus id libero
-						porta congue. Curabitur orci ante, aliquet in lacus ac,
-						pharetra ultricies nisi.
+						Our passionate team of designers and engineers have come
+						together to build a collaborative and interactive
+						platform that creates meaningful activities. We are
+						betting on bold people, investing in invention,
+						executing scalability. If you like fast-paced,
+						innovative, and fun teams who are using cutting edge
+						technology to disrupt large industries, join us. Working
+						with us means you’ll be challenged, surrounded by high
+						quality teammates, and learn something new every day. We
+						work hard for our coworkers sitting next to us and for
+						our customers around the world. This starts internally:
+						together we're creating a culture that embraces
+						diversity and learning, humility and gratitude.
 					</SectionText>
 				</Content>
 			</Section>
