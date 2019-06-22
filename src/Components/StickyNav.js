@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../Breakpoints";
 
 const Wrapper = styled.div`
 	position: sticky;
@@ -13,6 +14,10 @@ const NavList = styled.nav`
 	flex-direction: row;
 	list-style: none;
 	justify-content: center;
+
+	@media ${device.laptopL} {
+		flex-direction: row;
+	}
 `;
 
 const NavLogo = styled.div`
@@ -25,12 +30,18 @@ const NavLogo = styled.div`
 `;
 
 const NavItem = styled.li`
-	padding: 1rem 3rem;
-	font-size: 1.4rem;
+	padding: 0.5rem;
+	font-size: 1rem;
 	font-weight: 200;
 	color: rgb(200, 200, 200);
 	&:hover {
 		color: white;
+	}
+
+	@media ${device.laptopL} {
+		font-size: 1.4rem;
+		padding: 1rem 3rem;
+		font-size: 1.4rem;
 	}
 `;
 

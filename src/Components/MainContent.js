@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../Breakpoints";
 
 import ContactForm from "./ContactForm";
 
@@ -17,50 +18,90 @@ const Section = styled.div`
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: black;
-	padding: 4rem 0;
+	padding: 2rem 0;
+
+	@media ${device.laptopL} {
+		padding: 4rem 0;
+	}
 `;
 
 const Content = styled.div`
-	width: 60%;
+	width: 75%;
 	margin: 0 auto;
 	opacity: 1;
-	padding: 4rem;
+	padding: 2rem;
 	background-color: rgba(255, 255, 255, 0.9);
 	border: 6px solid ${backgroundColor};
+
+	@media ${device.laptopL} {
+		width: 60%;
+		padding: 4rem;
+	}
 `;
 
 const SubHeading = styled.h2`
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: bold;
-	margin: 0 0 4rem;
+	margin: 0 0 1rem;
+
+	@media ${device.laptopL} {
+		font-size: 3rem;
+		margin: 0 0 4rem;
+	}
 `;
 
 const SectionText = styled.p`
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	line-height: 1.3;
+
+	@media ${device.laptopL} {
+		font-size: 1.5rem;
+		line-height: 1.3;
+	}
 `;
 
 const TeamImageContainer = styled.ul`
 	list-style: none;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
-	margin: 0 0 5em -5em;
+	text-align: center;
+	margin-top: 3rem;
 	padding: 0;
+
+	@media ${device.laptopL} {
+		flex-direction: row;
+		margin: 0 0 5em -5em;
+		padding: 0 3rem;
+		li:nth-child(2n) {
+			margin-top: 10em;
+		}
+	}
 `;
 
 const TeamImage = styled.img`
-	width: 20rem;
-	height: 20rem;
+	width: 15rem;
+	height: 15rem;
 	border-radius: 50%;
 	object-fit: cover;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-right: -5em;
 	box-shadow: 1px 1px 15px black;
+	margin-top: 2rem;
 	&:hover {
 		opacity: 0.9;
+	}
+
+	@media ${device.laptopL} {
+		margin-right: -5em;
+		width: 20rem;
+		height: 20rem;
+	}
+`;
+
+const TeamText = styled.h3`
+	margin: 0.3rem;
+	@media ${device.laptopL} {
+		margin-left: 5rem;
+		font-size: 1rem;
 	}
 `;
 
@@ -150,32 +191,40 @@ const MainContent = props => {
 								src=".\media\team1.png"
 								alt="team member 1"
 							/>
+							<TeamText>John</TeamText>
+							<TeamText>CEO and Co-Founder</TeamText>
 						</li>
 						<li>
 							<TeamImage
 								src=".\media\team2.png"
 								alt="team member 2"
-								style={{ marginTop: "10em" }}
 							/>
+							<TeamText>Jane</TeamText>
+							<TeamText>CTO and Co-Founder</TeamText>
 						</li>
 						<li>
 							<TeamImage
 								src=".\media\team3.png"
 								alt="team member 3"
 							/>
+							<TeamText>Jack</TeamText>
+							<TeamText>Operations Director</TeamText>
 						</li>
 						<li>
 							<TeamImage
 								src=".\media\team4.png"
 								alt="team member 4"
-								style={{ marginTop: "10em" }}
 							/>
+							<TeamText>Jake</TeamText>
+							<TeamText>Cheif Engineer</TeamText>
 						</li>
 						<li>
 							<TeamImage
 								src=".\media\team5.png"
 								alt="team member 5"
 							/>
+							<TeamText>Jenn</TeamText>
+							<TeamText>Marketing and Strategy</TeamText>
 						</li>
 					</TeamImageContainer>
 					<SectionText id="our-team">

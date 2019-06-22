@@ -21,7 +21,6 @@ class App extends Component {
 
 	//smooth scrolls to a given element
 	scrollToElement = elementID => {
-		console.log(elementID);
 		let element = document.getElementById(elementID);
 		if (element !== null)
 			element.scrollIntoView({ behavior: "smooth", block: "center" });
