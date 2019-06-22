@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { device } from "../Breakpoints";
+import * as emailjs from "emailjs-com";
 
 const backgroundColor = "rgb(210,210,210)";
 
@@ -81,8 +82,48 @@ const SubmitButton = styled.button`
 `;
 
 class ContactForm extends Component {
+	state = {
+		subject: "",
+		content: "",
+	};
+
+	updateState = (param, value) => {
+		this.setState({
+			[param]: value,
+		});
+	};
+
+	sendEmail = (templateId, subject, messageContent, userID) => {
+		emailjs
+			.send(
+				"default_service",
+				templateId,
+				{
+					subject,
+					messageContent,
+				},
+				userID
+			)
+			.then(res => {
+				this.setState({
+					subject: "",
+					content: "",
+				});
+				alert("email sent", res.status);
+			})
+			// Handle errors on sending email
+			.catch(err => console.error("Failed to send email. Error: ", err));
+	};
+
 	submitContact = event => {
 		event.preventDefault();
+
+		this.sendEmail(
+			process.env.REACT_APP_EMAILJS_TEMPLATEID,
+			this.state.subject,
+			this.state.content,
+			process.env.REACT_APP_EMAILJS_USERID
+		);
 	};
 
 	render() {
@@ -93,17 +134,25 @@ class ContactForm extends Component {
 				<form
 					action="mailto:mattackard@gmail.com"
 					method="post"
-					enctype="text/plain">
-					<SubjectField type="text" placeholder="Subject" />
+					encType="text/plain"
+					onSubmit={this.submitContact}>
+					<SubjectField
+						type="text"
+						placeholder="Subject"
+						onChange={e =>
+							this.updateState("subject", e.target.value)
+						}
+						value={this.state.subject}
+					/>
 					<MessageField
 						id="contact-us"
 						placeholder="Type your message here"
+						onChange={e =>
+							this.updateState("content", e.target.value)
+						}
+						value={this.state.content}
 					/>
-					<SubmitButton
-						type="submit"
-						onClick={e => this.submitContact(e)}>
-						Send
-					</SubmitButton>
+					<SubmitButton type="submit">Send</SubmitButton>
 				</form>
 			</Wrapper>
 		);
