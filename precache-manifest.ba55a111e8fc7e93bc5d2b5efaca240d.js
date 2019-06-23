@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17ea12895646806d4c0c5a302176e8bd",
+    "revision": "2eb29810ab07ecd3abda2848b047be09",
     "url": "/BuzzWords/index.html"
   },
   {
-    "revision": "2b3d028f7c8b62290ab8",
+    "revision": "3fbc63f33dd7bce1a5aa",
     "url": "/BuzzWords/static/css/main.6df1a944.chunk.css"
   },
   {
-    "revision": "01dbb295505ffbc2d4d6",
-    "url": "/BuzzWords/static/js/2.8a607bd9.chunk.js"
+    "revision": "fffb534c87a31214b125",
+    "url": "/BuzzWords/static/js/2.8e8711d8.chunk.js"
   },
   {
-    "revision": "2b3d028f7c8b62290ab8",
-    "url": "/BuzzWords/static/js/main.cea95418.chunk.js"
+    "revision": "3fbc63f33dd7bce1a5aa",
+    "url": "/BuzzWords/static/js/main.fdd78aac.chunk.js"
   },
   {
     "revision": "a5ff8e802eb3a4949bbf",
