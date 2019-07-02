@@ -9,11 +9,13 @@ const Wrapper = styled.div`
 	background-color: rgba(0, 0, 0, 0.7);
 `;
 
-const NavList = styled.nav`
+const NavList = styled.ul`
 	display: flex;
 	flex-direction: row;
 	list-style: none;
 	justify-content: center;
+	padding: 0;
+	margin: 0;
 
 	@media ${device.laptopL} {
 		flex-direction: row;

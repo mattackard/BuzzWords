@@ -110,7 +110,7 @@ const MainContent = props => {
 		<Wrapper>
 			<Section
 				style={{
-					backgroundImage: 'url("media/serverSwitch.png")',
+					backgroundImage: 'url("media/serverSwitch.webp")',
 				}}>
 				<Content>
 					<SubHeading>Our Story</SubHeading>
@@ -144,7 +144,7 @@ const MainContent = props => {
 			</Section>
 			<Section
 				style={{
-					backgroundImage: 'url("media/wiringDiagram.png")',
+					backgroundImage: 'url("media/wiringDiagram.webp")',
 				}}>
 				<Content>
 					<SubHeading>What We Do</SubHeading>
@@ -165,7 +165,7 @@ const MainContent = props => {
 			</Section>
 			<Section
 				style={{
-					backgroundImage: 'url("media/officeMeeting.png")',
+					backgroundImage: 'url("media/officeMeeting.webp")',
 				}}>
 				<Content>
 					<SubHeading>Why Buzz</SubHeading>
@@ -185,10 +185,10 @@ const MainContent = props => {
 			<Section>
 				<Content style={{ boxShadow: "0px 5px 10px gray" }}>
 					<SubHeading>Our Team</SubHeading>
-					<TeamImageContainer>
+					<TeamImageContainer id="our-team">
 						<li>
 							<TeamImage
-								src=".\media\team1.png"
+								src=".\media\team1.webp"
 								alt="team member 1"
 							/>
 							<TeamText>John</TeamText>
@@ -196,7 +196,7 @@ const MainContent = props => {
 						</li>
 						<li>
 							<TeamImage
-								src=".\media\team2.png"
+								src=".\media\team2.webp"
 								alt="team member 2"
 							/>
 							<TeamText>Jane</TeamText>
@@ -204,7 +204,7 @@ const MainContent = props => {
 						</li>
 						<li>
 							<TeamImage
-								src=".\media\team3.png"
+								src=".\media\team3.webp"
 								alt="team member 3"
 							/>
 							<TeamText>Jack</TeamText>
@@ -212,7 +212,7 @@ const MainContent = props => {
 						</li>
 						<li>
 							<TeamImage
-								src=".\media\team4.png"
+								src=".\media\team4.webp"
 								alt="team member 4"
 							/>
 							<TeamText>Jake</TeamText>
@@ -220,14 +220,14 @@ const MainContent = props => {
 						</li>
 						<li>
 							<TeamImage
-								src=".\media\team5.png"
+								src=".\media\team5.webp"
 								alt="team member 5"
 							/>
 							<TeamText>Jenn</TeamText>
 							<TeamText>Marketing and Strategy</TeamText>
 						</li>
 					</TeamImageContainer>
-					<SectionText id="our-team">
+					<SectionText>
 						Our passionate team of designers and engineers have come
 						together to build a collaborative and interactive
 						platform that creates meaningful activities. We are

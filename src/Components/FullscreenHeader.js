@@ -7,8 +7,8 @@ const Wrapper = styled.div`
 	height: 92vh; //something weird with the space taken by the sticky nav that leaves extra space below the video at 100vh
 	margin: 0;
 	padding: 0;
-	background-color: rgba(0, 0, 0, 0.6);
 	text-align: center;
+	z-index: -2;
 
 	@media ${device.laptopL} {
 		text-align: left;
